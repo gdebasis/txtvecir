@@ -1,0 +1,226 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AllRelRcds	evaluator/Evaluator.java	/^    public AllRelRcds(String qrelsFile) {$/;"	m	class:AllRelRcds
+AllRelRcds	evaluator/Evaluator.java	/^class AllRelRcds {$/;"	c
+AllRetrievedResults	evaluator/Evaluator.java	/^    public AllRetrievedResults(String resFile) {$/;"	m	class:AllRetrievedResults
+AllRetrievedResults	evaluator/Evaluator.java	/^class AllRetrievedResults {$/;"	c
+COMPOSING_DELIM	wvec/WordVec.java	/^    public static final String COMPOSING_DELIM = ":";$/;"	f	class:WordVec
+CentroidLinkageSim	retriever/SetSimilarityMeasure.java	/^class CentroidLinkageSim implements SetSimilarityMeasure {$/;"	c
+CompleteLinkageSim	retriever/SetSimilarityMeasure.java	/^class CompleteLinkageSim implements SetSimilarityMeasure {$/;"	c
+DocVec	wvec/DocVec.java	/^    public DocVec(Document doc) {$/;"	m	class:DocVec
+DocVec	wvec/DocVec.java	/^    public DocVec(Query query) throws Exception {$/;"	m	class:DocVec
+DocVec	wvec/DocVec.java	/^    public DocVec(String id, String text) throws Exception {$/;"	m	class:DocVec
+DocVec	wvec/DocVec.java	/^public class DocVec {$/;"	c
+DocVecSimilarity	retriever/DocVecSimilarity.java	/^    public DocVecSimilarity(VecSimRetriever retriever, TopDocs topDocs, TRECQuery query) throws Exception {$/;"	m	class:DocVecSimilarity
+DocVecSimilarity	retriever/DocVecSimilarity.java	/^public class DocVecSimilarity {$/;"	c
+EPSILON	wvec/DocVec.java	/^    static final float EPSILON = .01f;$/;"	f	class:DocVec
+Evaluator	evaluator/Evaluator.java	/^    public Evaluator(Properties prop) {$/;"	m	class:Evaluator
+Evaluator	evaluator/Evaluator.java	/^    public Evaluator(String qrelsFile, String resFile) {$/;"	m	class:Evaluator
+Evaluator	evaluator/Evaluator.java	/^public class Evaluator {$/;"	c
+FIELD_ANALYZED_CONTENT	indexer/TrecDocIndexer.java	/^    static final public String FIELD_ANALYZED_CONTENT = "words";  \/\/ Standard analyzer w\/o stopwords.$/;"	f	class:TrecDocIndexer
+FIELD_ID	indexer/TrecDocIndexer.java	/^    static final public String FIELD_ID = "id";$/;"	f	class:TrecDocIndexer
+FIELD_WORDVEC_CLUSTER_CENTRES	indexer/TrecDocIndexer.java	/^    static final public String FIELD_WORDVEC_CLUSTER_CENTRES = "vecs";  $/;"	f	class:TrecDocIndexer
+FIELD_WORD_NAME	wvec/WordVecsIndexer.java	/^    static final public String FIELD_WORD_NAME = "wordname";$/;"	f	class:WordVecsIndexer
+FIELD_WORD_VEC	wvec/WordVecsIndexer.java	/^    static final public String FIELD_WORD_VEC = "wordvec";$/;"	f	class:WordVecsIndexer
+HausdorffSim	retriever/SetSimilarityMeasure.java	/^class HausdorffSim implements SetSimilarityMeasure {$/;"	c
+MIN_PTS	wvec/DocVec.java	/^    static final int MIN_PTS = 3;$/;"	f	class:DocVec
+PerQueryRelDocs	evaluator/Evaluator.java	/^    public PerQueryRelDocs(String qid) {$/;"	m	class:PerQueryRelDocs
+PerQueryRelDocs	evaluator/Evaluator.java	/^class PerQueryRelDocs {$/;"	c
+ResultTuple	evaluator/Evaluator.java	/^    public ResultTuple(String docName, int rank) {$/;"	m	class:ResultTuple
+ResultTuple	evaluator/Evaluator.java	/^class ResultTuple implements Comparable<ResultTuple> {$/;"	c
+RetrievedResults	evaluator/Evaluator.java	/^    public RetrievedResults(String qid) {$/;"	m	class:RetrievedResults
+RetrievedResults	evaluator/Evaluator.java	/^class RetrievedResults implements Comparable<RetrievedResults> {$/;"	c
+ScoreDocComparator	retriever/VecSimRetriever.java	/^class ScoreDocComparator implements Comparator<ScoreDoc> {$/;"	c
+SetSimilarityMeasure	retriever/SetSimilarityMeasure.java	/^interface SetSimilarityMeasure {$/;"	i
+SingleLinkageSim	retriever/SetSimilarityMeasure.java	/^class SingleLinkageSim implements SetSimilarityMeasure {$/;"	c
+TRECQuery	trec/TRECQuery.java	/^    public TRECQuery() {}$/;"	m	class:TRECQuery
+TRECQuery	trec/TRECQuery.java	/^    public TRECQuery(TRECQuery that) { \/\/ copy constructor$/;"	m	class:TRECQuery
+TRECQuery	trec/TRECQuery.java	/^public class TRECQuery {$/;"	c
+TRECQueryParser	trec/TRECQueryParser.java	/^    public TRECQueryParser(String fileName, Analyzer analyzer) throws SAXException {$/;"	m	class:TRECQueryParser
+TRECQueryParser	trec/TRECQueryParser.java	/^public class TRECQueryParser extends DefaultHandler {$/;"	c
+TrecDocIndexer	indexer/TrecDocIndexer.java	/^    public TrecDocIndexer(String propFile) throws Exception {$/;"	m	class:TrecDocIndexer
+TrecDocIndexer	indexer/TrecDocIndexer.java	/^public class TrecDocIndexer {$/;"	c
+VecSimRetriever	retriever/VecSimRetriever.java	/^    public VecSimRetriever(String propFile) throws Exception {$/;"	m	class:VecSimRetriever
+VecSimRetriever	retriever/VecSimRetriever.java	/^public class VecSimRetriever {$/;"	c
+WordVec	wvec/WordVec.java	/^    public WordVec(String line) {$/;"	m	class:WordVec
+WordVec	wvec/WordVec.java	/^    public WordVec(String word, double[] vec) {$/;"	m	class:WordVec
+WordVec	wvec/WordVec.java	/^    public WordVec(int dimension) { vec = new double[dimension]; }$/;"	m	class:WordVec
+WordVec	wvec/WordVec.java	/^public class WordVec implements Comparable<WordVec>, Serializable, Clusterable {$/;"	c
+WordVecs	wvec/WordVecs.java	/^public class WordVecs {$/;"	c
+WordVecsIndexer	wvec/WordVecsIndexer.java	/^    public WordVecsIndexer(String propFile) throws Exception {$/;"	m	class:WordVecsIndexer
+WordVecsIndexer	wvec/WordVecsIndexer.java	/^public class WordVecsIndexer {$/;"	c
+addTuple	evaluator/Evaluator.java	/^    void addTuple(String docId, int rel) {$/;"	m	class:PerQueryRelDocs
+addTuple	evaluator/Evaluator.java	/^    void addTuple(String docName, int rank) {$/;"	m	class:RetrievedResults
+allRelInfo	evaluator/Evaluator.java	/^    AllRelRcds allRelInfo;$/;"	f	class:AllRetrievedResults
+allRetMap	evaluator/Evaluator.java	/^    Map<String, RetrievedResults> allRetMap;$/;"	f	class:AllRetrievedResults
+analyzer	indexer/TrecDocIndexer.java	/^    Analyzer analyzer;$/;"	f	class:TrecDocIndexer
+analyzer	trec/TRECQueryParser.java	/^    Analyzer            analyzer;$/;"	f	class:TRECQueryParser
+avgP	evaluator/Evaluator.java	/^    float avgP;    $/;"	f	class:RetrievedResults
+buff	trec/TRECQueryParser.java	/^    StringBuffer        buff;      \/\/ Accumulation buffer for storing the current topic$/;"	f	class:TRECQueryParser
+buildStopwordList	indexer/TrecDocIndexer.java	/^    protected List<String> buildStopwordList(String stopwordFileName) {$/;"	m	class:TrecDocIndexer
+buildTerms	wvec/DocVec.java	/^    void buildTerms() throws Exception {$/;"	m	class:DocVec
+centroid	wvec/WordVec.java	/^    static public WordVec centroid(WordVec a, WordVec b) {$/;"	m	class:WordVec
+characters	trec/TRECQueryParser.java	/^    public void characters(char ch[], int start, int length) throws SAXException {$/;"	m	class:TRECQueryParser
+close	wvec/WordVecs.java	/^    static public void close() throws Exception {$/;"	m	class:WordVecs
+clusterWords	wvec/DocVec.java	/^    public List<CentroidCluster<WordVec>> clusterWords(int numClusters) throws Exception {$/;"	m	class:DocVec
+clusterer	wvec/DocVec.java	/^    KMeansPlusPlusClusterer<WordVec> clusterer;$/;"	f	class:DocVec
+compare	retriever/VecSimRetriever.java	/^    public int compare(ScoreDoc thisSd, ScoreDoc thatSd) {$/;"	m	class:ScoreDocComparator
+compareTo	evaluator/Evaluator.java	/^    public int compareTo(ResultTuple t) {$/;"	m	class:ResultTuple
+compareTo	evaluator/Evaluator.java	/^    public int compareTo(RetrievedResults that) {$/;"	m	class:RetrievedResults
+compareTo	wvec/WordVec.java	/^    public int compareTo(WordVec that) {$/;"	m	class:WordVec
+computeAP	evaluator/Evaluator.java	/^    float computeAP() {$/;"	m	class:RetrievedResults
+computeAll	evaluator/Evaluator.java	/^    String computeAll() {$/;"	m	class:AllRetrievedResults
+computeAll	evaluator/Evaluator.java	/^    public String computeAll() {$/;"	m	class:Evaluator
+computeDCG	evaluator/Evaluator.java	/^    float computeDCG(List<ResultTuple> rtuples, int cutoff) {$/;"	m	class:RetrievedResults
+computeNDCG	evaluator/Evaluator.java	/^    float computeNDCG(int ntops) {$/;"	m	class:RetrievedResults
+computeRecall	evaluator/Evaluator.java	/^    float computeRecall() {$/;"	m	class:RetrievedResults
+computeSim	retriever/SetSimilarityMeasure.java	/^    public float computeSim(DocVec a, DocVec b) throws Exception {$/;"	m	class:CentroidLinkageSim
+computeSim	retriever/SetSimilarityMeasure.java	/^    public float computeSim(DocVec a, DocVec b) throws Exception {$/;"	m	class:CompleteLinkageSim
+computeSim	retriever/SetSimilarityMeasure.java	/^    public float computeSim(DocVec a, DocVec b) throws Exception {$/;"	m	class:HausdorffSim
+computeSim	retriever/SetSimilarityMeasure.java	/^    public float computeSim(DocVec a, DocVec b) throws Exception {$/;"	m	class:SingleLinkageSim
+computeSim	retriever/SetSimilarityMeasure.java	/^    public float computeSim(DocVec a, DocVec b) throws Exception;$/;"	m	interface:SetSimilarityMeasure
+computeSims	retriever/DocVecSimilarity.java	/^    ScoreDoc[] computeSims() throws Exception {$/;"	m	class:DocVecSimilarity
+constructAnalyzer	indexer/TrecDocIndexer.java	/^    Analyzer constructAnalyzer() {$/;"	m	class:TrecDocIndexer
+constructDoc	indexer/TrecDocIndexer.java	/^    Document constructDoc(String id, String content) throws Exception {$/;"	m	class:TrecDocIndexer
+constructDoc	wvec/WordVecsIndexer.java	/^    Document constructDoc(String id, String line) throws Exception {        $/;"	m	class:WordVecsIndexer
+constructLuceneQueryObj	trec/TRECQueryParser.java	/^    public Query constructLuceneQueryObj(TRECQuery trecQuery) throws QueryNodeException {        $/;"	m	class:TRECQueryParser
+constructQueries	retriever/VecSimRetriever.java	/^    public List<TRECQuery> constructQueries() throws Exception {        $/;"	m	class:VecSimRetriever
+cosineSim	wvec/WordVec.java	/^    public float cosineSim(WordVec that) {$/;"	m	class:WordVec
+decodeFromByteArray	wvec/WordVec.java	/^    static WordVec decodeFromByteArray(BytesRef bytes) throws Exception {$/;"	m	class:WordVec
+desc	trec/TRECQuery.java	/^    public String       desc;$/;"	f	class:TRECQuery
+docName	evaluator/Evaluator.java	/^    String docName; \/\/ doc name$/;"	f	class:ResultTuple
+endElement	trec/TRECQueryParser.java	/^    public void endElement(String uri, String localName, String qName) throws SAXException {$/;"	m	class:TRECQueryParser
+euclideanDist	wvec/WordVec.java	/^    public float euclideanDist(WordVec that) {$/;"	m	class:WordVec
+evaluate	retriever/VecSimRetriever.java	/^    public void evaluate() throws Exception {$/;"	m	class:VecSimRetriever
+evaluator	evaluator/Evaluator.java	/^package evaluator;$/;"	p
+fileName	trec/TRECQueryParser.java	/^    String              fileName;$/;"	f	class:TRECQueryParser
+fillRelInfo	evaluator/Evaluator.java	/^    public void fillRelInfo() {$/;"	m	class:Evaluator
+fillRelInfo	evaluator/Evaluator.java	/^    public void fillRelInfo(AllRelRcds relInfo) {$/;"	m	class:AllRetrievedResults
+fillRelInfo	evaluator/Evaluator.java	/^    void fillRelInfo(PerQueryRelDocs relInfo) {$/;"	m	class:RetrievedResults
+getAnalyzer	indexer/TrecDocIndexer.java	/^    public Analyzer getAnalyzer() { return analyzer; }$/;"	m	class:TrecDocIndexer
+getBytes	wvec/WordVec.java	/^    public byte[] getBytes() throws IOException {$/;"	m	class:WordVec
+getCentroid	wvec/WordVecs.java	/^    static WordVec getCentroid(List<WordVec> wvecs) {$/;"	m	class:WordVecs
+getClusterVecs	wvec/DocVec.java	/^    public String getClusterVecs(int numClusters) throws Exception {$/;"	m	class:DocVec
+getDimension	wvec/WordVec.java	/^    public int getDimension() { return this.vec.length; }$/;"	m	class:WordVec
+getDocVec	indexer/TrecDocIndexer.java	/^    String getDocVec(String id, String text) throws Exception {$/;"	m	class:TrecDocIndexer
+getIndexDir	indexer/TrecDocIndexer.java	/^    public File getIndexDir() { return indexDir; }$/;"	m	class:TrecDocIndexer
+getLuceneQueryObj	trec/TRECQuery.java	/^    public Query getLuceneQueryObj() { return luceneQuery; }    $/;"	m	class:TRECQuery
+getLuceneQueryObject	wvec/WordVecs.java	/^    static Query getLuceneQueryObject(String word) {$/;"	m	class:WordVecs
+getNorm	wvec/WordVec.java	/^    public float getNorm() {$/;"	m	class:WordVec
+getPoint	wvec/WordVec.java	/^    public double[] getPoint() {$/;"	m	class:WordVec
+getProperties	indexer/TrecDocIndexer.java	/^    public Properties getProperties() { return prop; }$/;"	m	class:TrecDocIndexer
+getProperties	retriever/VecSimRetriever.java	/^    public Properties getProperties() { return prop; }$/;"	m	class:VecSimRetriever
+getQueries	trec/TRECQueryParser.java	/^    public List<TRECQuery> getQueries() { return queries; }$/;"	m	class:TRECQueryParser
+getQueryParser	trec/TRECQueryParser.java	/^    public StandardQueryParser getQueryParser() { return queryParser; }$/;"	m	class:TRECQueryParser
+getQuerySim	wvec/WordVec.java	/^    public float getQuerySim() { return querySim; }$/;"	m	class:WordVec
+getRelInfo	evaluator/Evaluator.java	/^    PerQueryRelDocs getRelInfo(String qid) {$/;"	m	class:AllRelRcds
+getSim	wvec/WordVecs.java	/^    static public float getSim(String u, String v) throws Exception {$/;"	m	class:WordVecs
+getSim	wvec/WordVecs.java	/^    static public float getSim(WordVec u, WordVec v) throws Exception {$/;"	m	class:WordVecs
+getTotalNumRel	evaluator/Evaluator.java	/^    int getTotalNumRel() {$/;"	m	class:AllRelRcds
+getVec	wvec/WordVecs.java	/^    static public WordVec getVec(String word) throws Exception {$/;"	m	class:WordVecs
+getWord	wvec/WordVec.java	/^    public String getWord() { return word; }$/;"	m	class:WordVec
+getWordVecs	wvec/DocVec.java	/^    public List<WordVec> getWordVecs() {$/;"	m	class:DocVec
+graded	evaluator/Evaluator.java	/^    static boolean graded;$/;"	f	class:Evaluator
+id	trec/TRECQuery.java	/^    public String       id;$/;"	f	class:TRECQuery
+id	wvec/DocVec.java	/^    String id;$/;"	f	class:DocVec
+indexAll	indexer/TrecDocIndexer.java	/^    void indexAll() throws Exception {$/;"	m	class:TrecDocIndexer
+indexDir	indexer/TrecDocIndexer.java	/^    File indexDir;$/;"	f	class:TrecDocIndexer
+indexDirectory	indexer/TrecDocIndexer.java	/^    private void indexDirectory(File dir) throws Exception {$/;"	m	class:TrecDocIndexer	file:
+indexFile	indexer/TrecDocIndexer.java	/^    void indexFile(File file) throws Exception {$/;"	m	class:TrecDocIndexer
+indexFile	wvec/WordVecsIndexer.java	/^    void indexFile(File file) throws Exception {$/;"	m	class:WordVecsIndexer
+indexPath	wvec/WordVecsIndexer.java	/^    String indexPath;$/;"	f	class:WordVecsIndexer
+indexer	indexer/TrecDocIndexer.java	/^package indexer;$/;"	p
+indexer	retriever/VecSimRetriever.java	/^    TrecDocIndexer indexer;$/;"	f	class:VecSimRetriever
+init	wvec/WordVecs.java	/^    static public void init(String propFile) throws Exception {        $/;"	m	class:WordVecs
+isComposed	wvec/WordVec.java	/^    public boolean isComposed() { return isComposed; }$/;"	m	class:WordVec
+isComposed	wvec/WordVec.java	/^    transient boolean isComposed;$/;"	f	class:WordVec
+load	evaluator/Evaluator.java	/^    public void load() throws Exception {$/;"	m	class:Evaluator
+load	evaluator/Evaluator.java	/^    public void load() {$/;"	m	class:AllRetrievedResults
+load	evaluator/Evaluator.java	/^    void load() throws Exception {$/;"	m	class:AllRelRcds
+luceneQuery	trec/TRECQuery.java	/^    public Query        luceneQuery;$/;"	f	class:TRECQuery
+main	evaluator/Evaluator.java	/^    public static void main(String[] args) {$/;"	m	class:Evaluator
+main	indexer/TrecDocIndexer.java	/^    public static void main(String[] args) {$/;"	m	class:TrecDocIndexer
+main	retriever/VecSimRetriever.java	/^    public static void main(String[] args) {$/;"	m	class:VecSimRetriever
+main	trec/TRECQueryParser.java	/^    public static void main(String[] args) {$/;"	m	class:TRECQueryParser
+main	wvec/DocVec.java	/^    public static void main(String[] args) {$/;"	m	class:DocVec
+main	wvec/WordVecs.java	/^    public static void main(String[] args) {$/;"	m	class:WordVecs
+main	wvec/WordVecsIndexer.java	/^    public static void main(String[] args) {$/;"	m	class:WordVecsIndexer
+narr	trec/TRECQuery.java	/^    public String       narr;$/;"	f	class:TRECQuery
+norm	wvec/WordVec.java	/^    float norm;$/;"	f	class:WordVec
+numClusters	indexer/TrecDocIndexer.java	/^    int numClusters;$/;"	f	class:TrecDocIndexer
+numDocs	retriever/DocVecSimilarity.java	/^    int numDocs;$/;"	f	class:DocVecSimilarity
+numRel	evaluator/Evaluator.java	/^    int numRel;$/;"	f	class:PerQueryRelDocs
+numRelRet	evaluator/Evaluator.java	/^    int numRelRet;$/;"	f	class:RetrievedResults
+numWanted	retriever/VecSimRetriever.java	/^    int numWanted;$/;"	f	class:VecSimRetriever
+parse	trec/TRECQueryParser.java	/^    public void parse() throws Exception {$/;"	m	class:TRECQueryParser
+perQueryRels	evaluator/Evaluator.java	/^    HashMap<String, PerQueryRelDocs> perQueryRels;$/;"	f	class:AllRelRcds
+precAtTop	evaluator/Evaluator.java	/^    float precAtTop(int k) {$/;"	m	class:RetrievedResults
+processAll	indexer/TrecDocIndexer.java	/^    void processAll() throws Exception {$/;"	m	class:TrecDocIndexer
+prop	indexer/TrecDocIndexer.java	/^    Properties prop;$/;"	f	class:TrecDocIndexer
+prop	retriever/DocVecSimilarity.java	/^    Properties prop;$/;"	f	class:DocVecSimilarity
+prop	retriever/VecSimRetriever.java	/^    Properties prop;$/;"	f	class:VecSimRetriever
+prop	wvec/WordVecs.java	/^    static Properties prop;$/;"	f	class:WordVecs
+prop	wvec/WordVecsIndexer.java	/^    Properties prop;$/;"	f	class:WordVecsIndexer
+qid	evaluator/Evaluator.java	/^    String qid;$/;"	f	class:PerQueryRelDocs
+qid	evaluator/Evaluator.java	/^    String qid;$/;"	f	class:RetrievedResults
+qrelsFile	evaluator/Evaluator.java	/^    String qrelsFile;$/;"	f	class:AllRelRcds
+queries	trec/TRECQueryParser.java	/^    public List<TRECQuery>  queries;$/;"	f	class:TRECQueryParser
+query	retriever/DocVecSimilarity.java	/^    TRECQuery query;$/;"	f	class:DocVecSimilarity
+query	trec/TRECQueryParser.java	/^    TRECQuery           query;$/;"	f	class:TRECQueryParser
+queryParser	trec/TRECQueryParser.java	/^    StandardQueryParser queryParser;$/;"	f	class:TRECQueryParser
+querySim	wvec/WordVec.java	/^    float querySim; \/\/ distance from a reference query point$/;"	f	class:WordVec
+queryVec	retriever/DocVecSimilarity.java	/^    DocVec queryVec;$/;"	f	class:DocVecSimilarity
+rank	evaluator/Evaluator.java	/^    int rank;       \/\/ rank of retrieved document$/;"	f	class:ResultTuple
+reader	retriever/DocVecSimilarity.java	/^    IndexReader reader;$/;"	f	class:DocVecSimilarity
+reader	retriever/VecSimRetriever.java	/^    IndexReader reader;$/;"	f	class:VecSimRetriever
+reader	wvec/WordVecs.java	/^    static IndexReader reader;$/;"	f	class:WordVecs
+rel	evaluator/Evaluator.java	/^    int rel;    \/\/ is this relevant? comes from qrel-info$/;"	f	class:ResultTuple
+relInfo	evaluator/Evaluator.java	/^    PerQueryRelDocs relInfo;$/;"	f	class:RetrievedResults
+relMap	evaluator/Evaluator.java	/^    HashMap<String, Integer> relMap; \/\/ keyed by docid, entry stores the rel value$/;"	f	class:PerQueryRelDocs
+relRcds	evaluator/Evaluator.java	/^    AllRelRcds relRcds;$/;"	f	class:Evaluator
+resFile	evaluator/Evaluator.java	/^    String resFile;$/;"	f	class:AllRetrievedResults
+retRcds	evaluator/Evaluator.java	/^    AllRetrievedResults retRcds;$/;"	f	class:Evaluator
+retrieveAll	retriever/VecSimRetriever.java	/^    public void retrieveAll() throws Exception {$/;"	m	class:VecSimRetriever
+retriever	retriever/DocVecSimilarity.java	/^package retriever;$/;"	p
+retriever	retriever/SetSimilarityMeasure.java	/^package retriever;$/;"	p
+retriever	retriever/VecSimRetriever.java	/^package retriever;$/;"	p
+rtuples	evaluator/Evaluator.java	/^    List<ResultTuple> rtuples;$/;"	f	class:RetrievedResults
+runName	retriever/VecSimRetriever.java	/^    String runName;$/;"	f	class:VecSimRetriever
+saveRetrievedTuples	retriever/VecSimRetriever.java	/^    public void saveRetrievedTuples(FileWriter fw, TRECQuery query, TopDocs topDocs) throws Exception {$/;"	m	class:VecSimRetriever
+searcher	retriever/VecSimRetriever.java	/^    IndexSearcher searcher;$/;"	f	class:VecSimRetriever
+searcher	wvec/WordVecs.java	/^    static IndexSearcher searcher;$/;"	f	class:WordVecs
+setWord	wvec/WordVec.java	/^    public void setWord(String name) { this.word = name; }$/;"	m	class:WordVec
+simMeasures	retriever/DocVecSimilarity.java	/^    HashMap<String, SetSimilarityMeasure> simMeasures;$/;"	f	class:DocVecSimilarity
+startElement	trec/TRECQueryParser.java	/^    public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {$/;"	m	class:TRECQueryParser
+stopwords	indexer/TrecDocIndexer.java	/^    List<String> stopwords;$/;"	f	class:TrecDocIndexer
+storeRelRcd	evaluator/Evaluator.java	/^    void storeRelRcd(String line) {$/;"	m	class:AllRelRcds
+storeRetRcd	evaluator/Evaluator.java	/^    void storeRetRcd(String line) {$/;"	m	class:AllRetrievedResults
+tags	trec/TRECQueryParser.java	/^    final static String[] tags = {"id", "title", "desc", "narr"};$/;"	f	class:TRECQueryParser
+text	wvec/DocVec.java	/^    String text;  \/\/ Ensure that you pass a preprocessed list of tokens delimited by white spaces.$/;"	f	class:DocVec
+textSimWt	retriever/DocVecSimilarity.java	/^    float textSimWt;$/;"	f	class:DocVecSimilarity
+threshold	evaluator/Evaluator.java	/^    static int threshold;$/;"	f	class:Evaluator
+title	trec/TRECQuery.java	/^    public String       title;$/;"	f	class:TRECQuery
+toString	evaluator/Evaluator.java	/^    public String toString() {$/;"	m	class:AllRelRcds
+toString	evaluator/Evaluator.java	/^    public String toString() {$/;"	m	class:AllRetrievedResults
+toString	evaluator/Evaluator.java	/^    public String toString() {$/;"	m	class:Evaluator
+toString	evaluator/Evaluator.java	/^    public String toString() {$/;"	m	class:RetrievedResults
+toString	trec/TRECQuery.java	/^    public String toString() {$/;"	m	class:TRECQuery
+toString	wvec/WordVec.java	/^    public String toString() {$/;"	m	class:WordVec
+topDocs	retriever/DocVecSimilarity.java	/^    TopDocs topDocs;$/;"	f	class:DocVecSimilarity
+totalNumRel	evaluator/Evaluator.java	/^    int totalNumRel;$/;"	f	class:AllRelRcds
+trec	trec/TRECQuery.java	/^package trec;$/;"	p
+trec	trec/TRECQueryParser.java	/^package trec;$/;"	p
+vec	wvec/WordVec.java	/^    double[] vec;$/;"	f	class:WordVec
+word	wvec/WordVec.java	/^    String word;$/;"	f	class:WordVec
+writeIndex	wvec/WordVecsIndexer.java	/^    public void writeIndex() throws Exception {$/;"	m	class:WordVecsIndexer
+writer	indexer/TrecDocIndexer.java	/^    IndexWriter writer;$/;"	f	class:TrecDocIndexer
+writer	wvec/WordVecsIndexer.java	/^    IndexWriter writer;$/;"	f	class:WordVecsIndexer
+wvec	wvec/DocVec.java	/^package wvec;$/;"	p
+wvec	wvec/WordVec.java	/^package wvec;$/;"	p
+wvec	wvec/WordVecs.java	/^package wvec;$/;"	p
+wvec	wvec/WordVecsIndexer.java	/^package wvec;$/;"	p
+wvecMap	wvec/DocVec.java	/^    HashMap<String, WordVec> wvecMap;$/;"	f	class:DocVec
