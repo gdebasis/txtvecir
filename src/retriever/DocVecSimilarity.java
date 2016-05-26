@@ -43,7 +43,12 @@ public class DocVecSimilarity {
     VecSimRetriever retriver;
     
     boolean compressedIndex, vocabCluster;
+    byte allDocWords;
     float textSimWt;
+
+    static final byte WORDS_AS_CLUSTERS = 0;
+    static final byte ALL_WORDS_AS_SEPARATE_CLUSTERS = 1;
+    static final byte ALL_WORDS_AS_ONE_CLUSTER = 2;
     
     public DocVecSimilarity(VecSimRetriever retriever, TopDocs topDocs, TRECQuery query, float textSimWt) throws Exception {
         this.retriver = retriever;
@@ -66,10 +71,15 @@ public class DocVecSimilarity {
         simMeasures.put("haussdorf", new HausdorffSim());
         
         compressedIndex = Boolean.parseBoolean(prop.getProperty("index.compressed", "true"));
+        // possible values cluster/one/all
+        String docSetFormation = prop.getProperty("doc.setformation", "cluster");
+        allDocWords = docSetFormation.equals("cluster")? WORDS_AS_CLUSTERS:
+                docSetFormation.equals("one")?
+                ALL_WORDS_AS_ONE_CLUSTER : ALL_WORDS_AS_SEPARATE_CLUSTERS;
         this.vocabCluster = retriever.numVocabClusters > 0;
     }
 
-    HashMap<String, WordVec> loadWordClusterInfo(int docId) throws Exception {
+    HashMap<String, WordVec> loadWordClusterInfo(int docId, byte allDocWords) throws Exception {
         String termText;
         BytesRef term;
         Terms tfvector;
@@ -81,16 +91,23 @@ public class DocVecSimilarity {
         // Construct the normalized tf vector
         termsEnum = tfvector.iterator(null); // access the terms for this field
         
+        int wordId = 0;
         //System.out.println("Getting cluster ids for document " + docId);
     	while ((term = termsEnum.next()) != null) { // explore the terms for this field
+            wordId++;
             termText = term.utf8ToString();
-            int clusterId = WordVecs.getClusterId(termText);
+            int clusterId =
+                    allDocWords==ALL_WORDS_AS_SEPARATE_CLUSTERS? wordId : // each word a new cluster id
+                    allDocWords==WORDS_AS_CLUSTERS? WordVecs.getClusterId(termText): // cluster ids from vocab
+                    0; // each word the same cluster id
             if (clusterId < 0)
                 continue;
             
             // Get the term and its cluster id.. Store in a hashmap for
             // computing group-wise centroids
             WordVec wv = WordVecs.getVecCached(termText);
+            if (wv == null)
+                continue;
             List<WordVec> veclist = clusterMap.get(clusterId);
             if (veclist == null) {
                 veclist = new ArrayList<>();
@@ -129,7 +146,7 @@ public class DocVecSimilarity {
             // the former is stored in an auxiliary index, latter stored
             // as auxiliary field of the retrievable document index...
             if (vocabCluster) {
-                HashMap<String, WordVec> wvmap = loadWordClusterInfo(sd.doc);
+                HashMap<String, WordVec> wvmap = loadWordClusterInfo(sd.doc, allDocWords);
                 docvec = new DocVec(wvmap);
             }
             else {
