@@ -103,6 +103,7 @@ public class WordVecsIndexer {
         
         // Read every wvec and load in memory
         for (int i = 0; i < numDocs; i++) {
+			System.out.println("Reading doc " + i);
             Document doc = reader.document(i);
             WordVec wvec = new WordVec(doc.get(FIELD_WORD_VEC));
             wordList.add(wvec);            
@@ -166,7 +167,7 @@ public class WordVecsIndexer {
         }
 
         try {
-            WordVecsIndexer wvIndexer = new WordVecsIndexer("init.properties");
+            WordVecsIndexer wvIndexer = new WordVecsIndexer(args[0]);
             //wvIndexer.writeIndex();
             wvIndexer.storeClusterInfo();
         }
