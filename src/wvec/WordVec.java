@@ -24,7 +24,7 @@ import org.apache.lucene.util.BytesRef;
  * @author dganguly
  */
 
-public class WordVec implements Comparable<WordVec>, Serializable, Clusterable {
+public class WordVec implements Comparable<WordVec>, Serializable, Clusterable<WordVec> {
     String word;
     float[] vec;
     float norm;
@@ -157,5 +157,11 @@ public class WordVec implements Comparable<WordVec>, Serializable, Clusterable {
         }
         return buff.toString();
     }
+
+	//+++DG: Make the K-means clusterer work with angles.
+	double distanceFrom(WordVec that) {
+		float cosineSim = this.cosineSim(that);		
+		return Math.acos(cosineSim);
+	} 
 }
 

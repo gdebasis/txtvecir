@@ -173,3 +173,23 @@ class HausdorffSim implements SetSimilarityMeasure {
     
 }
 
+class CentroidLinkageDistance implements SetSimilarityMeasure {
+    @Override
+    public float computeSim(DocVec a, DocVec b) throws Exception {
+        List<WordVec> alist = a.getWordVecs();
+        List<WordVec> blist = b.getWordVecs();
+
+		float avgCosDist = 0;
+        float normalizationFactor = 0;
+        
+        for (WordVec avec : alist) {
+            for (WordVec bvec : blist) {
+				avgCosDist += avec.distanceFrom(bvec);
+                normalizationFactor = normalizationFactor + Math.PI; // the angle value is between 0 to Pi
+            }            
+        }
+        avgCosDist = avgCosDist/normalizationFactor;
+		return Math.exp(-avgCosDist*avgCosDist);
+	}
+}
+

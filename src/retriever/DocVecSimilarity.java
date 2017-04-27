@@ -66,6 +66,7 @@ public class DocVecSimilarity {
         simMeasures = new HashMap<>();
         simMeasures.put("single-link", new SingleLinkageSim());
         simMeasures.put("complete-link", new CompleteLinkageSim());
+        simMeasures.put("centroid-link-cos", new CentroidLinkageDistance(this.prop, this.reader));
         simMeasures.put("centroid-link", new CentroidLinkageSim(this.prop, this.reader));
         simMeasures.put("grpavg-link", new GroupAvgSim());
         simMeasures.put("haussdorf", new HausdorffSim());
