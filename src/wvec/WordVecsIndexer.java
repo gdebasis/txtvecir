@@ -51,7 +51,8 @@ class CosineDistance implements DistanceMeasure {
         for (int i = 0; i < a.length; i++) {
             sum += a[i]*b[i];
         }
-        return sum/(norm(a)*norm(b));
+		double cosineSim = sum/(norm(a)*norm(b));
+        return Math.acos(cosineSim); // return cos inverse 
     }    
 }
 
