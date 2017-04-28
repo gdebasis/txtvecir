@@ -33,6 +33,28 @@ import org.apache.lucene.util.packed.DirectReader;
  *
  * @author Debasis
  */
+
+class CosineDistance implements DistanceMeasure {
+
+    double norm(double[] vec) {
+        // calculate and store
+        double sum = 0;
+        for (int i = 0; i < vec.length; i++) {
+            sum += vec[i]*vec[i];
+        }
+        return Math.sqrt(sum);
+    }
+    
+    @Override
+    public double compute(double[] a, double[] b) throws DimensionMismatchException {
+        double sum = 0;
+        for (int i = 0; i < a.length; i++) {
+            sum += a[i]*b[i];
+        }
+        return sum/(norm(a)*norm(b));
+    }    
+}
+
 public class WordVecsIndexer {
     IndexWriter writer;
     Properties prop;
@@ -98,7 +120,11 @@ public class WordVecsIndexer {
         // Index where word vectors are stored
         IndexReader reader = DirectoryReader.open(FSDirectory.open(new File(indexPath)));
         int numDocs = reader.numDocs();
-        KMeansPlusPlusClusterer<WordVec> clusterer = new KMeansPlusPlusClusterer<>(numClusters); 
+		//+++DG: Cluster on cosine distances, i.e. the angles between the vecs
+        //KMeansPlusPlusClusterer<WordVec> clusterer = new KMeansPlusPlusClusterer<>(numClusters); 
+        DistanceMeasure angleMeasure = new CosineDistance();
+        KMeansPlusPlusClusterer<WordVec> clusterer = new KMeansPlusPlusClusterer<>(numClusters, 1000, angleMeasure);
+		//---DG:
         List<WordVec> wordList = new ArrayList<>(numDocs);
         
         // Read every wvec and load in memory

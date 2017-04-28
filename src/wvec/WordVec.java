@@ -157,11 +157,5 @@ public class WordVec implements Comparable<WordVec>, Serializable, Clusterable<W
         }
         return buff.toString();
     }
-
-	//+++DG: Make the K-means clusterer work with angles.
-	double distanceFrom(WordVec that) {
-		float cosineSim = this.cosineSim(that);		
-		return Math.acos(cosineSim);
-	} 
 }
 
