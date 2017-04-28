@@ -128,6 +128,10 @@ public class WordVecs {
         return uVec.cosineSim(vVec);
     }
     
+    static public float getAngularDist(WordVec u, WordVec v) throws Exception {
+        return Math.acos(u.cosineSim(v));
+    }
+
     static public float getSim(WordVec u, WordVec v) throws Exception {
         return u.cosineSim(v);
     }

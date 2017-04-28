@@ -124,7 +124,7 @@ public class WordVecsIndexer {
 		//+++DG: Cluster on cosine distances, i.e. the angles between the vecs
         //KMeansPlusPlusClusterer<WordVec> clusterer = new KMeansPlusPlusClusterer<>(numClusters); 
         DistanceMeasure angleMeasure = new CosineDistance();
-        KMeansPlusPlusClusterer<WordVec> clusterer = new KMeansPlusPlusClusterer<>(numClusters, 1000, angleMeasure);
+        KMeansPlusPlusClusterer<WordVec> clusterer = new KMeansPlusPlusClusterer<>(numClusters, 500, angleMeasure);
 		//---DG:
         List<WordVec> wordList = new ArrayList<>(numDocs);
         
